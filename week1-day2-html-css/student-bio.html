@@ -3,52 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>CSS Stylesheets with Relative Paths</title>
-
-        <style>
-          #pageheading {
-              margin: auto;
-              width: 100%;
-              background-color: black;
-              color: white;
-          }
-
-          #headingtext {
-              text-align: center;
-          }
-
-          #selfie {
-              background-color: lightgray;
-              float: left;
-          }
-
-          #biotext {
-              float: left;
-              width: 50%;
-              margin-left: 50px;
-              margin-right: 50px;
-          }
-
-          #contactinfo {
-              float: left;
-              margin-top: -16px;
-          }
-
-          #maincontent {
-              background-color: #ede9da;
-              height: 300px;
-          }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
   <body>
-      <header id="pageheading">
-        <h1 id="headingtext">Student Bio</h1>
+      <header>
+        <h1>Student Bio</h1>
       </header>
 
-      <div id="maincontent">
-        <section id="bio">
+      <div class="container">
+        <section id="main-bio">
           <h2>Thomas Harris</h2>
-          <img id="selfie" src="./img/selfie01.jpg" height="200" width="200" alt="thomas harris selfie" />
+          <img id="bio-image" src="./img/selfie01.jpg" height="200" width="200" alt="thomas harris selfie" />
 
           <div id="biotext">
             <p>Thomas Harris is originally from Philadelphia, Pennsylvania. He has lived in California for most of his adult life.</p>
@@ -56,7 +21,7 @@
           </div>
         </section>
 
-        <section id="contactinfo">
+        <section id="contact-info">
           <h2>Contact Info</h2>
            <ul>
              <li><strong>Email: </strong><a href="twharris@cox.net">twharris@cox.net</a></li>
